@@ -120,6 +120,12 @@ namespace signals {
     struct request_snapshot : public detail::value_signal<request_snapshot, string> {
       using base_type::base_type;
     };
+    struct update_background : public detail::base_signal<update_background> {
+      using base_type::base_type;
+    };
+    struct update_geometry : public detail::base_signal<update_geometry> {
+      using base_type::base_type;
+    };
   }
 
   namespace ui_tray {
